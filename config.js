@@ -3,7 +3,7 @@ let chalk = require('chalk')
 
 global.owner = [
   ['6285922480867'],
-  ['6285922480867', 'Kyy', true]
+  ['6285922480867', 'kyy', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -57,9 +57,9 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-global.packname = sticker_botki
-global.author = sticker_Ki
-global.wm = 'ChruzzXd-Botki'
+global.packname = sticker_name
+global.author = sticker_author
+global.wm = 'Kyy-Bot'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
@@ -102,5 +102,5 @@ fs.watchFile(file, () => {
   fs.unwatchFile(file)
   console.log(chalk.redBright("Update 'config.js'"))
   delete require.cache[file]
-  require(file)
+  require(file
 })
